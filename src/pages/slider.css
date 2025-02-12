@@ -1,0 +1,42 @@
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(300px * 20); /* Adjust based on number of logos */
+    animation: scroll 40s linear infinite;
+}
+
+.top {
+    animation-direction: reverse; /* Right to Left */
+}
+
+.bottom {
+    animation-direction: normal; /* Left to Right */
+}
+
+.company-logo {
+    flex: 0 0 auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 12px;
+    width: 220px; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo img {
+    width: 80%;  /* Ensures logo fits inside box */
+    height: 80;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
