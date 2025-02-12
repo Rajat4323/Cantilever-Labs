@@ -11,7 +11,7 @@ const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const alumniCompanies = [
-    { name: "Tech Mahindra", logo: "/logos/image15.png" },
+    { name: "Tech Mahindra", logo: "/image25.png" },
     { name: "Amazon", logo: "https://logo.clearbit.com/amazon.com" },
     { name: "LinkedIn", logo: "https://logo.clearbit.com/linkedin.com" },
     { name: "Accenture", logo: "https://logo.clearbit.com/accenture.com" },
